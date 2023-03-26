@@ -1,102 +1,72 @@
-* {
-	font-family: "맑은 고딕", serif;
-	background-color:pink;
+/* -------------------여기부터 section--------------------- */
+.thumbnails {
+	width: 80%;
+	min-width: 500px;
+	height: 85%;
 }
 
-/* 여기부터 header */
-header{
-	margin-bottom: 50px;
-}
-#main_title, #main_title:link {
-	color: powderblue;
-	text-decoration-line: none;
-	text-align: center;
-
-}
-.search_box{
-	display: inline;
-}
-.search_text{
-	height: 50px;
+.main_image a img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-}
-
-.search_button{
-	
-}
-
-/* 여기부터 nav */
-
-nav{
-	display:table-cell;
-	width: 20%;
 	height: 100%;
-}
-.nav_container {
-	text-decoration: none;
-	border: 1px solid black;	
-}
-.nav_container h3{
-	text-align: center;
-	width: 300px;
-	height: 100%;
+	object-fit: cover;
 }
 
-#classification_register_button{
-	/* position: absolute; */
-	/* top:2px; */
-	/* left:3px; */
-	text-align: right;
-	font-size: 5px;
-	text-decoration: underline;
-}
-
-.list_container{
-	border-bottom: solid black 1px;
-}
-.classification_list_ul li{
-	display: inline;
-
-}
-
-.edit_button {
-	font-size: 5px;
-	display: inline;
-	text-align: right;
-}
-
-.delete_button {
-	font-size: 8px;
-	font-weight: bold;
-	display: inline; 
-	text-align: right;
-}
-
-#clipart_register_button{
-	text-align: center;
-	border: black 1px solid;
-	/* position: absolute; */
-	/* top:1px; */
-
-}
-
-/* 여기부터 section */
-section{
-	display:table-cell;
+.main_image img:hover {
+	border: black 3px solid;
+	margin: -3px;
 }
 
 .main_image {
-	display: inline;
-	width: 50px;
+	display: inline-flex;
+	height: 33%;
+	position: relative;
+	width: 20%;
+	justify-content: right;
+}
+
+.main_image:after {
+	display: block;
+	content: "";
+	padding-bottom: 100%;
+}
+
+.image_delete_button {
+	position: absolute;
+	background-color: transparent;
+	cursor: pointer;
+	color: gray;
+}
+
+.image_delete_button:hover {
+	color: black;
+}
+
+/* --------------------여기부터 footer-------------------------- */
+footer {
 	height: 50px;
+	display: flex;
+	justify-content: center;
 }
 
-.main_image:hover {
-	border: black 5px solid;
+footer img {
+	width: 34px;
+	height: 34px;
+	padding: 8px;
+	cursor: pointer;
 }
 
-#nextpage_button{
-	border: black 1px solid;
+.nextpage_button {
+	border-radius: 8px;
 	text-decoration-line: none;
-	color: blacks;
+	color: black;
+	margin: 0px 4px 0px 4px;
+	font-size: 20px;
+	padding: 8px;
+}
+
+.nextpage_button:hover {
+	font-weight: bold;
 }

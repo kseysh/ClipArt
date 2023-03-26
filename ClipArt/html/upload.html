@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Internet programming project">
+<meta name="author" content="김승환">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/upload.css">
+<title>ClipArt</title>
+</head>
+<body>
+	<header>
+		<a href="../index.html" class="main_title">ClipArt</a>
+		<div class="search_box">
+			<fieldset class="main_search">
+				<button class="search_button">
+					<img src="../image/search_icon.png" alt="search icon">
+				</button>
+				<input class="search_text_area" type="text"> <select
+					class="search_classification">
+					<optgroup label="분류">
+						<option selected="selected">분류 선택</option>
+						<option>사람 (5)</option>
+						<option>자동차 (6)</option>
+						<option>식물 (3)</option>
+						<option>컴퓨터 (0)</option>
+					</optgroup>
+				</select>
+
+			</fieldset>
+		</div>
+
+	</header>
+
+	<div class="main">
+		<nav>
+			<div class="wrapper">
+				<div class="classification_register_button">등록</div>
+				<div class="nav_container">
+					<h3 style="text-align: center;">분류</h3>
+					<ul>
+						<div class="list_container">
+							<li><span class="classification_text">사람 (5)</span> <span>
+									<span class="edit_button"><img
+										src="../image/edit_icon.png" alt="edit icon"> 수정</span> <span
+									class="list_delete_button">X</span>
+							</span></li>
+
+						</div>
+						<div class="list_container">
+							<li><span class="classification_text">자동차 (6)</span> <span>
+									<span class="edit_button"><img
+										src="../image/edit_icon.png" alt="edit icon">수정 </span> <span
+									class="list_delete_button"> X</span>
+							</span></li>
+
+						</div>
+						<div class="list_container">
+							<li><span class="classification_text">식물 (3)</span> <span>
+									<span class="edit_button"><img
+										src="../image/edit_icon.png" alt="edit icon">수정</span> <span
+									class="list_delete_button">X</span>
+							</span></li>
+
+						</div>
+						<div class="list_container">
+							<li><span class="classification_text">컴퓨터 (0)</span> <span>
+									<span class="edit_button"><img
+										src="../image/edit_icon.png" alt="edit icon">수정</span> <span
+									class="list_delete_button" style="color: black">X</span>
+							</span></li>
+
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<a class="clipart_register_button" href="#">클립아트 등록</a>
+		</nav>
+
+		<section class="thumbnails" style="margin: 0px 50px 50px 50px;">
+			<div class="image_upload_block">
+				<div class="image_upload_square_box">
+					<div class="image_upload_square_content"></div>
+				</div>
+				<div class="image_upload_button">
+					<img src="../image/download_icon.png" alt=""> 업로드
+				</div>
+			</div>
+			<div class="image_description_block">
+				<div class="image_description">
+					<p>파일 이름: 소방관</p>
+					분류 : <select>
+						<optgroup label="분류">
+							<option selected="selected">분류 선택</option>
+							<option>사람 (5)</option>
+							<option>자동차 (6)</option>
+							<option>식물 (3)</option>
+							<option>컴퓨터 (0)</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div class="edit_register_box">
+					<div class="last_edit_time">
+						<p>최종 수정 일시</p>
+						<p>23/03/11 21:19</p>
+					</div>
+					<div class="image_register_button">등록</div>
+				</div>
+
+
+
+			</div>
+
+		</section>
+
+	</div>
+</body>
+</html>
