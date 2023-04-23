@@ -7,7 +7,11 @@ function search(){
     if(search_text==""){
         alert("검색어를 입력해주세요.");
     }else{
-        alert("검색어 : "+search_area.value+"\n분류 : "+search_classification.value);
+      if(classfication_text=="분류 선택"){
+        alert("검색어 : "+search_text);
+      }else{
+        alert("검색어 : "+search_text+"\n분류 : "+classfication_text);
+      }
     }
 }
 
