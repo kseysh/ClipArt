@@ -10,23 +10,22 @@
 <link rel="stylesheet" href="./css/layout.css">
 <title>ClipArt</title>
 </head>
-
 <body>
 	<header>
 		<a href="index.html" class="main_title">ClipArt</a>
 		<div class="search_box">
 			<fieldset class="main_search">
-				<button class="search_button">
+				<button class="search_button" onclick="search()">
 					<img src="./image/search_icon.png" alt="search icon">
 				</button>
-				<input class="search_text_area" type="text"> <select
-					class="search_classification">
+				<input id="search_text_area"  type="text"> 
+				<select id="search_classification">
 					<optgroup label="분류">
-						<option selected="selected">분류 선택 </option>
-						<option>사람 (5)</option>
-						<option>자동차 (6)</option>
-						<option>식물 (3)</option>
-						<option>컴퓨터 (0)</option>
+						<option selected="selected" value="분류 선택">분류 선택 </option>
+						<option value="사람">사람 (5)</option>
+						<option value="자동차">자동차 (6)</option>
+						<option value="식물">식물 (3)</option>
+						<option value="컴퓨터">컴퓨터 (0)</option>
 					</optgroup>
 				</select>
 
@@ -39,23 +38,30 @@
 		<nav>
 			<div class="wrapper">
 
-				<div class="classification_register_button">등록</div>
+				<div id="classification_register_button">등록</div>
 				<div class="nav_container">
 
 
 					<h3 style="text-align: center;">분류</h3>
 
-					<ul class="classification_list_ul">
+					<ul id="classification_list_ul">
 						<div class="list_container">
-							<li><span class="classification_text">사람 (5)</span> <span>
-									<span class="edit_button"><img
-										src="./image/edit_icon.png" alt="edit icon"> 수정</span> <span
-									class="list_delete_button">X</span>
-							</span></li>
+							<li>
+								<span class="classification_text" value="사람">사람 </span> 
+								<span>
+									<span class="edit_button">
+										<img src="./image/edit_icon.png" alt="edit icon"> 
+										수정									
+									</span> 
+									<span class="list_delete_button"> 
+										X
+									</span>
+								</span>
+							</li>
 
 						</div>
 						<div class="list_container">
-							<li><span class="classification_text">자동차 (6)</span> <span>
+							<li><span class="classification_text" value="자동차">자동차 </span> <span>
 									<span class="edit_button"><img
 										src="./image/edit_icon.png" alt="edit icon">수정 </span> <span
 									class="list_delete_button"> X</span>
@@ -63,18 +69,18 @@
 
 						</div>
 						<div class="list_container">
-							<li><span class="classification_text">식물 (3)</span> <span>
+							<li><span class="classification_text" value="식물">식물 </span> <span>
 									<span class="edit_button"><img
 										src="./image/edit_icon.png" alt="edit icon">수정</span> <span
-									class="list_delete_button">X</span>
+									class="list_delete_button"> X</span>
 							</span></li>
 
 						</div>
 						<div class="list_container">
-							<li><span class="classification_text">컴퓨터 (0)</span> <span>
+							<li><span class="classification_text" value="컴퓨터">컴퓨터 </span> <span>
 									<span class="edit_button"><img
 										src="./image/edit_icon.png" alt="edit icon">수정</span> <span
-									class="list_delete_button" style="color: black">X</span>
+									class="list_delete_button" style="color: black"> X</span>
 							</span></li>
 
 						</div>
@@ -157,5 +163,6 @@
 
 
 	</footer>
+	<script src="./js/layout.js"></script>
 </body>
 </html>

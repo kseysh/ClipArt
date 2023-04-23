@@ -38,7 +38,7 @@ header {
 	padding: 0px;
 }
 
-.search_text_area {
+#search_text_area {
 	height: 60px;
 	padding: 0px 13px;
 	width: 70%;
@@ -66,7 +66,7 @@ header {
 	height: 30px;
 }
 
-.search_classification {
+#search_classification {
 	width: 25%;
 	height: 100%;
 	padding: 13px 15px;
@@ -97,7 +97,7 @@ nav {
 	justify-content: right;
 }
 
-.classification_register_button {
+#classification_register_button {
 	position: absolute;
 	background-color: transparent;
 	font-size: 5px;
