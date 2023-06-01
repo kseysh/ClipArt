@@ -1,0 +1,72 @@
+/* -------------------여기부터 section--------------------- */
+.thumbnails {
+	width: 80%;
+	min-width: 500px;
+	height: 85%;
+}
+
+.main_image a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.main_image img:hover {
+	border: black 3px solid;
+	margin: -3px;
+}
+
+.main_image {
+	display: inline-flex;
+	height: 33%;
+	position: relative;
+	width: 20%;
+	justify-content: right;
+}
+
+.main_image:after {
+	display: block;
+	content: "";
+	padding-bottom: 100%;
+}
+
+.image_delete_button {
+	position: absolute;
+	background-color: transparent;
+	cursor: pointer;
+	color: gray;
+}
+
+.image_delete_button:hover {
+	color: black;
+}
+
+/* --------------------여기부터 footer-------------------------- */
+footer {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+footer img {
+	width: 34px;
+	height: 34px;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.nextpage_button {
+	border-radius: 8px;
+	text-decoration-line: none;
+	color: black;
+	margin: 0px 4px 0px 4px;
+	font-size: 20px;
+	padding: 8px;
+}
+
+.nextpage_button:hover {
+	font-weight: bold;
+}
